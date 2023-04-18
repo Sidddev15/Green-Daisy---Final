@@ -2278,3 +2278,15 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+.mob-logo img{
+  height: auto;
+  width: 50% !important;
+}
+
+@media screen and (max-width: 768px){
+  .mob-logo img{
+    height: auto;
+    width: 100% !important;
+}
+}
