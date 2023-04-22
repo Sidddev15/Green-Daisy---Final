@@ -354,7 +354,45 @@ h6 {
   z-index: 1;
 }
 
+#hero-spices-copy {
+  width: 100%;
+  height: 75vh;
+  background: url("../img/HDTeas/SpicesForBackgorund.jpg") top center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: -140px;
+  z-index: 1;
+}
+#hero-nc-copy {
+  width: 100%;
+  height: 75vh;
+  background: url("../img/HDTeas/NimbuChaiHeaderImage.jpg") top center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: -140px;
+  z-index: 1;
+}
+
 #hero:before {
+  content: "";
+  background: rgba(60, 65, 51, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero-spices-copy:before {
+  content: "";
+  background: rgba(60, 65, 51, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#hero-nc-copy:before {
   content: "";
   background: rgba(60, 65, 51, 0.4);
   position: absolute;
@@ -377,6 +415,33 @@ h6 {
   text-align: center;
 }
 
+#hero-spices-copy .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#hero-nc-copy .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
@@ -385,7 +450,33 @@ h6 {
   color: #fff;
 }
 
+#hero-spices-copy h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+#hero-nc-copy h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
 #hero h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+#hero-spices-copy h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+#hero-nc-copy h2 {
   color: #eee;
   margin-bottom: 50px;
   font-size: 24px;
@@ -406,12 +497,55 @@ h6 {
   color: #fff;
 }
 
+#hero-spices-copy .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #0a8a0c;
+  text-transform: uppercase;
+  color: #fff;
+}
+#hero-nc-copy .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #0a8a0c;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 #hero .btn-get-started:hover {
+  background: #0a8a0c;
+}
+
+#hero-spices-copy .btn-get-started:hover {
+  background: #0a8a0c;
+}
+#hero-nc-copy .btn-get-started:hover {
   background: #0a8a0c;
 }
 
 @media (min-width: 1024px) {
   #hero {
+    background-attachment: fixed;
+  }
+
+  #hero-spices-copy {
+    background-attachment: fixed;
+  }
+  #hero-nc-copy {
     background-attachment: fixed;
   }
 }
@@ -421,7 +555,23 @@ h6 {
     height: 100vh;
   }
 
+  #hero-spices-copy {
+    height: 100vh;
+  }
+  #hero-nc-copy {
+    height: 100vh;
+  }
+
   #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero-spices-copy h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero-nc-copy h1 {
     font-size: 28px;
     line-height: 36px;
   }
@@ -432,13 +582,38 @@ h6 {
     margin-bottom: 30px;
   }
 
+  #hero-spices-copy h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  #hero-nc-copy h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
   #hero .hero-container {
+    padding: 0 15px;
+  }
+
+  #hero-spices-copy .hero-container {
+    padding: 0 15px;
+  }
+  #hero-nc-copy .hero-container {
     padding: 0 15px;
   }
 }
 
 @media (max-height: 500px) {
   #hero {
+    height: 120vh;
+  }
+
+  #hero-spices-copy {
+    height: 120vh;
+  }
+  #hero-nc-copy {
     height: 120vh;
   }
 }
@@ -717,6 +892,17 @@ section {
   background: #0bce0b;
   border-color: #0bce0b;
 }
+
+/* ===========features hero img ============ */
+.features {
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 500px;
+}
+
+
+
+/* ========================================= */
 
 /*--------------------------------------------------------------
 # Services
@@ -2281,12 +2467,23 @@ section {
 
 .mob-logo img{
   height: auto;
-  width: 50% !important;
+  width: 10% !important;
+} 
+
+.mob-logo-GD {
+  height: auto;
+  width: 80% !important;
+  margin-top: -15px !important;
 }
+ 
 
 @media screen and (max-width: 768px){
   .mob-logo img{
     height: auto;
-    width: 100% !important;
+    width: 50% !important;
+}
+  .mob-logo-GD {
+  height: auto;
+  width: 70% !important;
 }
 }
