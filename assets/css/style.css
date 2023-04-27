@@ -2469,23 +2469,59 @@ section {
 
 .mob-logo img{
   height: auto;
-  width: 10% !important;
+  width: 30% !important;
 } 
 
 .mob-logo-GD {
   height: auto;
-  width: 80% !important;
+  width: 70% !important;
   margin-top: -15px !important;
 }
+
+.mob-logo-nst {
+  position:relative; 
+  float: right; 
+  height: auto; 
+  width: 20%;
+  margin-top: -3px;
+}
+
+.mob-logo-fssai {
+  height: auto;
+  width: 9%;
+  margin-top: 20px
+}
+.center {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
  
 
 @media screen and (max-width: 768px){
-  .mob-logo img{
+  .mob-logo{
     height: auto;
     width: 50% !important;
-}
+  }
   .mob-logo-GD {
+    height: auto;
+    width: 40% !important;
+  }
+
+  .mob-logo-nst {
+    position:relative;  
+    height: auto; 
+    width: 20%;
+    margin: 0;
+  }
+
+  .mob-logo-fssai {
   height: auto;
-  width: 70% !important;
-}
+  width: 20%;
+  margin-top: 20px
+  }
+
+
+
 }
